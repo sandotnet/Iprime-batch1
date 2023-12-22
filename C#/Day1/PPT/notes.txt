@@ -1,0 +1,38 @@
+Application Types
+=====================
+1. Web App(Browser App)
+2. Desktop App(Windows App)
+  notepad,media players,ms office,browser
+3. MObile App
+4. Service App(API)
+What is Dotnet??
+===================
+Dotnet is a development plotform it helps to build diff applications
+ex: web apps, desktop apps,mobile apps,service apps
+
+Web App
+Front End Technologies
+1. ReactJs
+2. Angular
+3. VueJs
+
+Front End + BackEnd
+============================
+Backend
+1. C#.net
+2. Asp.net Core(Web App,Blazor App,Service App(API))
+3. SQL SERVER(Database server)
+4. Entity Framework
+Frontend
+5. HTML,CSS,Bootstrap and Javascript
+6. ReactJs
+
+
+1. Ado.net
+2. Entity Framework
+
+Environment Setup
+====================
+ 1. Windows 11 OS
+ 2. Visual Studio 2022
+ 3. SqlServer 2019/2022 express Edition
