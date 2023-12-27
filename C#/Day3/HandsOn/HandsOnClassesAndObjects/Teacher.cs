@@ -40,8 +40,7 @@ namespace HandsOnClassesAndObjects
                     {
                         return teacher;
                     }
-                    else
-                        return null;
+                    
                 }
 
             }
