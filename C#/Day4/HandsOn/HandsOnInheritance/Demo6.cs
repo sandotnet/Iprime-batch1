@@ -25,7 +25,7 @@ namespace HandsOnInheritance
     class Princple:Staff
     {
         public string level;
-
+        new public int staffId;
         public Princple(int staffId, string staffName,string level)
             :base(staffId,staffName)
         {
@@ -46,7 +46,7 @@ namespace HandsOnInheritance
             obj.Display(); //invoke Pricple display fn
             Staff ob1 = new Staff(4320943, "Jenny");
             ob1.Display(); //invoke Staff display fn
-            Staff ob2 = new Princple(324342,"Jon","Vice Principle");
+            Staff ob2 = new Princple(324342,"Jon","Vice Principle"); //object of base class and instance of derived class can access only base class members
             ob2.Display(); //invokes only staff class Display
         }
     }
