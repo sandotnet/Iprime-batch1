@@ -1,0 +1,43 @@
+Development plotforms in Dotnet(Microsoft)
+=============================================
+1. 2000 year
+2. Dotnet Framework
+      Windows app
+      Web App
+      Web App with MVC
+      Web API
+3. Dotnet Framework Apps run only on Windows hosting plotform   
+
+public domains
+
+www.gmail.com
+www.facebook.com
+www.amazon.com
+www.Iprimed.in   
+2. host applications
+    1. windows(dotnet framework supports only this)
+    2. linux
+    3. mac
+    
+ 3. Dotnet Core
+ 
+ create-react-app app_name
+ 
+ 
+ Http Verbs/methods
+ ===================
+ Get-        Get/Read Data from the server
+ POST-       Add Data to Server
+ PUT-        To update data to server
+ Delete-     To delete data to server
+ 
+ http://localhost/Students - Get-  Get all Students from server
+ http://localhost/Students - POST- Add new Student
+ http://localhost/Students - PUT-  Edit the Students details
+ http://localhost/Students - Delete- Delete student details
+ 
+ Webservers in Visual Studio
+ ===============================
+ 1. Kestral(windows,linux,mac)
+ 2. IIS express(windows)
+ 

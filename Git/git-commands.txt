@@ -1,0 +1,1 @@
+clone: copy files from remote repository to local repository

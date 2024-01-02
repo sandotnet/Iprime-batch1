@@ -1,0 +1,20 @@
+Controller
+===============
+1. A controller is a class which expose to the client
+2. In api controlles are use to handle client/user request and responses.
+3. A controller is a collection of action methods
+4. controller action methods are requested by using diff http methods.
+5. An api project have many controllers
+6. every action method in the controller expose to particular http verb
+7. all action methods in controllers are defined with http verbs
+
+
+url pattern in api
+=====================
+http://localhost:port/controller_route or
+http://localhost:port/controller_route/action_route
+
+http://localhsot:9098/api/Teacher
+set http request: Get
+
+Note: by default requests made by browser all are get request
