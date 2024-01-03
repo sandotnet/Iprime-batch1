@@ -13,8 +13,9 @@ url pattern in api
 =====================
 http://localhost:port/controller_route or
 http://localhost:port/controller_route/action_route
+http://localhost:port/controller_route/action_route/parameter
 
 http://localhsot:9098/api/Teacher
 set http request: Get
 
-Note: by default requests made by browser all are get request
+Note: by default requests made by browser all are get request and browser can test only get request.
