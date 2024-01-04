@@ -1,7 +1,8 @@
 
-using HandsOnAPIUsingModels.Repositories;
+using DependencyInjectionAndServiceLifetimes.Interfaces;
+using DependencyInjectionAndServiceLifetimes.Services;
 
-namespace HandsOnAPIUsingModels
+namespace HandsOnDependencyInjection_Demo
 {
     public class Program
     {
@@ -10,7 +11,9 @@ namespace HandsOnAPIUsingModels
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddSingleton<ITeacherRepository,TeacherRepository>();
+            builder.Services.AddTransient<IExampleTransientService, ExampleTransientService>();
+            builder.Services.AddScoped<IExampleScopedService, ExampleScopedService>();
+            builder.Services.AddSingleton<IExampleSingletonService, ExampleSingletonService>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -30,7 +33,7 @@ namespace HandsOnAPIUsingModels
 
             app.MapControllers();
 
-           app.Run();
+            app.Run();
         }
     }
 }
