@@ -4,7 +4,7 @@ namespace HandsOnAPIUsingModels.Repositories
 {
     public class TeacherRepository : ITeacherRepository
     {
-        public static List<Teacher> teachers = new List<Teacher>()
+        public  List<Teacher> teachers = new List<Teacher>()
         {
             new Teacher(){Id=454,Name="Nidhi",Subject="English",Stds=new[] {"1","2","3"} }
         };

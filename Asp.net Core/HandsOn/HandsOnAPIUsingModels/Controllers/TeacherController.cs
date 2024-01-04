@@ -10,10 +10,16 @@ namespace HandsOnAPIUsingModels.Controllers
     public class TeacherController : ControllerBase
     {
         private readonly ITeacherRepository teacherRepository;
-        public TeacherController()
+
+        public TeacherController(ITeacherRepository teacherRepository)
         {
-            teacherRepository= new TeacherRepository(); 
+            this.teacherRepository = teacherRepository;
         }
+
+        //public TeacherController()
+        //{
+        //    teacherRepository= new TeacherRepository(); 
+        //}
         //end points
         [HttpGet,Route("GetAllTeachers")]
         public IActionResult GetAll() //return any type of data as a http response

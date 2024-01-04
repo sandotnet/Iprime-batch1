@@ -1,6 +1,6 @@
 1.Create BookService API
-2.Create a Model Book(BookId,BookName,Price,Author,Lang,ReleaseDate)
-3.Perform CRUD functions on Book using Repositroy Pattern
+2.Create a Model Book(BookId,BookName,Price,Author,Lang,Publiser,ReleaseYear)
+3.Perform CRUD functions on Book using Repositroy Pattern(declare functions in interface and implement by a class)
 	AddBook()
 	GetAllBooks()
 	GetBooksByAuthor(string Autor)
@@ -8,5 +8,6 @@
 	GetBooksByYear(int year)
 	EditBook()
 	DeleteBook(int bookId)
-4.Create a BookController and crate diff actions to invoke the book repository functionalities
-5.Test the BookController endpoints using PostMan
+4.Create a BookController and create diff actions to invoke the book repository functionalities
+5.Test the BookController endpoints using PostMan/Swagger
+6.Follow the best practices and exception handling
