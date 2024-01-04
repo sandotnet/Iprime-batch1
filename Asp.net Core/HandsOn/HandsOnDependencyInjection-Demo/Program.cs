@@ -11,7 +11,7 @@ namespace HandsOnDependencyInjection_Demo
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddTransient<IExampleTransientService, ExampleTransientService>();
+            builder.Services.AddTransient<ExampleTransientService>();
             builder.Services.AddScoped<IExampleScopedService, ExampleScopedService>();
             builder.Services.AddSingleton<IExampleSingletonService, ExampleSingletonService>();
             builder.Services.AddControllers();

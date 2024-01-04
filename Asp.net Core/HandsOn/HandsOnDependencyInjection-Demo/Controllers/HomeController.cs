@@ -1,4 +1,5 @@
 ﻿using DependencyInjectionAndServiceLifetimes.Interfaces;
+using DependencyInjectionAndServiceLifetimes.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
@@ -9,8 +10,8 @@ namespace HandsOnDependencyInjection_Demo.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
-        private readonly IExampleTransientService _exampleTransientService1;
-        private readonly IExampleTransientService _exampleTransientService2;
+        private readonly ExampleTransientService _exampleTransientService1;
+        private readonly ExampleTransientService _exampleTransientService2;
 
         private readonly IExampleScopedService _exampleScopedService1;
         private readonly IExampleScopedService _exampleScopedService2;
@@ -18,8 +19,8 @@ namespace HandsOnDependencyInjection_Demo.Controllers
         private readonly IExampleSingletonService _exampleSingletonService1;
         private readonly IExampleSingletonService _exampleSingletonService2;
 
-        public HomeController(IExampleTransientService exampleTransientService1,
-            IExampleTransientService exampleTransientService2,
+        public HomeController(ExampleTransientService exampleTransientService1,
+            ExampleTransientService exampleTransientService2,
             IExampleScopedService exampleScopedService1,
             IExampleScopedService exampleScopedService2,
             IExampleSingletonService exampleSingletonService1,
