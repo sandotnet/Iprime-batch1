@@ -1,0 +1,25 @@
+Regex Pattern expressions
+======================
+\d- only allow digits
+\D- allow only non digit keys
+{range}- allow only given range of chars
+{min,max}- allow chars between min and max range
+
+\d{10} - allow exactly 10 digits
+postal code- \d{5} - allow only 5 digits
+password- \D{6,8} - allow 6 to 8 chars
+
+[]- group chars
+[a-z]- allow a to z 
+[A-Z] - allow A to Z
+[0-9]- allow 0 to 9
+[a-z0-9] - allow numbers and alphabets
+[aeiou]- allow only those chars
+mobile no= +91-[6-9]\d{9}
+           +[0-9]{2,3]
+
+Quantifiers
+=============
+* - allow 1 or more occurence
++ - allow 0 to more occurence
+?- allow 0 or 1
