@@ -19,7 +19,7 @@ namespace HandsOnAPIUsingModelValidation.Controllers
         {
             new User(){Id=303,Name="Manoj",Email="manoj@gmail.com",Mobile="9890989090",Username="Manoj",Password="12345"}
         };
-        [HttpPost]
+        [HttpPost,Route("Validate")]
         public IActionResult Validate(Login login)
         {
             try
@@ -45,6 +45,29 @@ namespace HandsOnAPIUsingModelValidation.Controllers
                     {
                         return StatusCode(200, new JsonResult("Invalid User Credentials"));
                     }
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(501, ex);
+            }
+        }
+        [HttpPost,Route("Register")]
+        public IActionResult Register([FromBody]User user) //[FormBody] exprected model data from the request body
+        {
+            try
+            {
+                if(ModelState.IsValid)
+                {
+                    user.Id = new Random().Next(1000, 9999);
+                    //add model datais to backend table
+                    users.Add(user);
+                    return Ok(user); //Ok Retruns model data with status code 200
                 }
                 else
                 {
