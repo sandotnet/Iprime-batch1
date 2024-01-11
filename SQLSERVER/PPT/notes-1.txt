@@ -1,0 +1,25 @@
+RDBMS(Relational Database Management Software)
+================================================
+SqlServer
+Oracle
+MySql
+Document Databases
+=====================
+MongoDB
+Node Databases
+================
+Postgre
+
+Authentication to connect to sqlserver
+
+1. Windows Authentication(to connect local server)
+connected using windows login credentials
+2. SqlServer Authetication(to connect local,remore and cloud sqlserver)
+connected using user name and password
+(credentials are given at the time of installation)
+
+Roles in Sqlserver
+===================
+1. SqlServer Administrator
+2. SqlServer Maintaince
+3. SqlServer Developer
