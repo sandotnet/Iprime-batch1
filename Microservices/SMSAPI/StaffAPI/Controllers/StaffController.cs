@@ -16,7 +16,7 @@ namespace StaffAPI.Controllers
             this.staffRepository = staffRepository;
         }
         //Endpoints
-        [HttpGet,Route("GetAllStaffs")]
+        [HttpGet]
         public IActionResult GetAll()
         {
             try
