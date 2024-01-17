@@ -16,6 +16,6 @@ namespace HandsOnEFCodeFirst_Demo2.Entities
 
         //Navigation property
         [ForeignKey("StudentId")]
-        public Student Student { get; set; }
+        public Student? Student { get; set; }
     }
 }

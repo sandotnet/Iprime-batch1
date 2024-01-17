@@ -84,5 +84,10 @@ namespace HandsOnEFCodeFirst_Demo2.Controllers
                 throw;
             }
         }
+        [HttpGet,Route("GetMarks/{id}")]
+        public IActionResult GetMarks(int id)
+        {
+            return Ok(studentRepository.GetMarks(id));
+        }
     }
 }

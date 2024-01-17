@@ -1,4 +1,5 @@
 
+using HandsOnEFCodeFirst_Demo2.Entities;
 using HandsOnEFCodeFirst_Demo2.Repositories;
 
 namespace HandsOnEFCodeFirst_Demo2
@@ -11,6 +12,8 @@ namespace HandsOnEFCodeFirst_Demo2
 
             // Add services to the container.
             builder.Services.AddTransient<StudentRepository>();
+            builder.Services.AddTransient<MarksRepository>();
+            builder.Services.AddDbContext<MyContext>();//register MyContext service to DI
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
