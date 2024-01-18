@@ -1,0 +1,16 @@
+WebTechnologies(Frontend Implemenation)
+=============================================
+ 1. HTML
+ 2. CSS
+ 3. Javascript
+ 4. React
+ 5. Bootstrap
+ 
+ Javascript
+ ============
+ 1. Javascript is a client side scripting lang.
+ 2. Javascript simply run in any client browser
+ 3. Javascript is case sensitive.
+ 4. Javascript is use to create user intaractive pages.
+ 5. Javascript is recommended for Angular,React and Vue frameworks.
+ 6. Node is a Runtime for Javascript apps.
