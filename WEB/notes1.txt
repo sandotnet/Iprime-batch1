@@ -14,3 +14,4 @@ WebTechnologies(Frontend Implemenation)
  4. Javascript is use to create user intaractive pages.
  5. Javascript is recommended for Angular,React and Vue frameworks.
  6. Node is a Runtime for Javascript apps.
+ Javascript versions are ecma5 and ecma6
