@@ -1,4 +1,4 @@
-class student {
+class Student {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -9,9 +9,9 @@ class student {
     console.log(this.city);
   }
 }
-var obj = new student("sachin", 12);
+var obj = new Student("sachin", 12);
 obj.display();
-var obj1 = new student("Ram", 23);
+var obj1 = new Student("Ram", 23);
 obj1.display();
-var obj2 = new student("Virat", 12);
+var obj2 = new Student("Virat", 12);
 obj2.display();
