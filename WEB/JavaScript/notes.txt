@@ -1,0 +1,11 @@
+DOM stands for Document object model
+=====================================
+DOM is a concept of access,traverse,edit,delete,
+create html elements from javascript
+Event
+======
+event is an action which fire when something happens
+ex: click,chage,submit,blur,mouseover etc.
+Handler is nothing but a function
+invoking functions throuh events is called event handling
+All events are use through html elements
