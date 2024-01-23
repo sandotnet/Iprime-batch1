@@ -1,0 +1,12 @@
+
+1.For an Online Bookstore create a class to store book details and display the  book details with fields isbn,bookname,booktitle,bookauthor,quantityofbooks,bookprice.calculate and display the bill amount
+[Note: Use Suitable Methods]
+
+
+2. Create a class called Student with the following details:
+		RollNo
+		StudName
+		MarksInEng
+		MarksInMaths
+		MarksInScience
+   Display the total marks and Percentage of the student.
