@@ -1,0 +1,6 @@
+create following procedure wrt employee table
+a. add new employee
+b. get all employees
+c. get all employees by dept
+d. edit employee details
+e. delete employee by id.
