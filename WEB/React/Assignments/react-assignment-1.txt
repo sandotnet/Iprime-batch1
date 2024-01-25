@@ -1,0 +1,2 @@
+1. Create Home component 
+2. Create Login and Signup compnents with default template(template should have header,nav and footer)

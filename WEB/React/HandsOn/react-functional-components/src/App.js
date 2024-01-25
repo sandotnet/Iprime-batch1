@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Greet from "./Greet";
+import Message from "./Message";
+import Garage from "./Car";
+import Shop from "./Product";
+import Classroom from "./ClassRoom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Greet name="Sachin" age="45" city="Mumbai" />
+      <Greet name="Virat" age="35" city="Delhi" />
+      <Greet name="Rohith" age="36" city="Banglore" />
+      <Message name="Nidhi" />
+      <Message name="Akash" />
+      <Message name="Saranya" />
+      <Greet name="Virat" age="35" city="Delhi">
+        <h1>Virat is a Indian Cricketer!!</h1>
+      </Greet> */}
+      {/* <Garage />
+      <Garage brand="Hundai" color="Red" /> */}
+      {/* <Shop /> */}
+      <Classroom />
     </div>
   );
 }
