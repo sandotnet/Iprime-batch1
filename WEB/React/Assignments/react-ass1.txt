@@ -1,0 +1,8 @@
+define list of colors and bind to order list and table
+define list of cities in kerala and bind to city compononent
+
+1.create a Teacher component and defind teacher state with properties
+like teacherId,teacherName,subject,std
+2. display teacher details with update button.
+3. when user clicks on update button update the std and keep rest of the
+details are same.
