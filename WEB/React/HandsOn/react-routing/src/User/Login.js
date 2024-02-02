@@ -18,6 +18,9 @@ const Login = (e) => {
       (u) => u.username === user.username && u.password === user.password
     );
     if (validUser != null) {
+      //set username in sessionstorage
+      sessionStorage.setItem("uname", 
+      user.username);
       if (validUser.role === "admin") {
         navigate("/admin-dashboard");
       } else if (validUser.role === "student") {

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 const AdminDashboard = () => {
+  const [uname, setUname] = useState("");
+  useEffect(() => {
+    let u = sessionStorage.getItem("uname"); //return value from session storage using key
+    setUname(u);
+  }, []);
   return (
     <div>
       <header>
         <h1>ABC School</h1>
+        <h4 style={{ float: "right", padding: "10px" }}>Welcome {uname}</h4>
       </header>
       <nav>
         <ul>
