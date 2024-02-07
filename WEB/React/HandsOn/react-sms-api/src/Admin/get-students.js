@@ -1,18 +1,28 @@
 import { React, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 const GetStudents = () => {
   const [students, getStudents] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
-    axios
-      .get("http://localhost:5066/api/Student/GetStudents")
-      .then((response) => {
-        console.log(response.data); //response.data return json data send by API
-        getStudents(response.data); //add response data to students state
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  },[]);
+    if (sessionStorage.getItem("token") != null) {
+      console.log(sessionStorage.getItem("token"));
+      const headers = {
+        Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+      };
+      axios
+        .get("http://localhost:5066/api/Student/GetStudents", { headers })
+        .then((response) => {
+          console.log(response.data); //response.data return json data send by API
+          getStudents(response.data); //add response data to students state
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      navigate("/login");
+    }
+  }, []);
   return (
     <div className="container">
       <table className="table table-striped">

@@ -39,7 +39,7 @@ namespace SMSAPI.Repositories
         }
         public User Validate(LoginUser loginUser)
         {
-            return _context.Users.SingleOrDefault(u => u.UserName == loginUser.Username && u.Password == loginUser.Password);
+            return _context.Users.SingleOrDefault(u => u.Email == loginUser.Email && u.Password == loginUser.Password);
         }
     }
 }

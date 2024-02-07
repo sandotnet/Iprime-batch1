@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SMSAPI.Entities;
 using SMSAPI.Repositories;
@@ -17,17 +18,20 @@ namespace SMSAPI.Controllers
         }
         //Get actions
         [HttpGet,Route("GetStudents")]
+        [Authorize(Roles ="Admin")]
         public IActionResult GetAll()
         {
             return Ok(_studentRepository.GetAll());
         }
         [HttpGet,Route("GetStudent/{id}")]
+        [Authorize(Roles = "Admin,Student")]
         public IActionResult GetAction(string id)
         {
             return Ok(_studentRepository.Get(id));
         }
         //Post actions
         [HttpPost,Route("AddStudent")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Add([FromBody]Student student)
         {
             _studentRepository.Add(student);
@@ -35,6 +39,7 @@ namespace SMSAPI.Controllers
         }
         //Put actions
         [HttpPut, Route("EditStudent")]
+        [Authorize(Roles = "Student")]
         public IActionResult Update([FromBody] Student student)
         {
             _studentRepository.Update(student);
@@ -42,6 +47,7 @@ namespace SMSAPI.Controllers
         }
         //Delete actions
         [HttpDelete,Route("DeleteStudent/{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(string id)
         {
             _studentRepository.Delete(id);
