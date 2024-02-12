@@ -23,7 +23,11 @@ const myElement = (
     </table>
   </div>
 );
-root.render(<React.StrictMode>{myElement}</React.StrictMode>);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 // root.render(<React.StrictMode><App /></React.StrictMode>);
 //ReactDOM.render(<App />, document.getElementById("root"));
 // ReactDOM.render(<p>Hello</p>, document.getElementById("root"));

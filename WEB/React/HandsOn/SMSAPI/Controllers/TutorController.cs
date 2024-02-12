@@ -8,6 +8,7 @@ namespace SMSAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+   
     public class TutorController : ControllerBase
     {
         private readonly TutorRepository _tutorRepository;
