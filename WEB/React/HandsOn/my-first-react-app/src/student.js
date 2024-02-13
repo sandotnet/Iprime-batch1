@@ -15,14 +15,14 @@ export default function Student() {
       status: "A",
     },
   ]);
-  const setAtt = (id, att) => {
+  const setAtt = (id, status) => {
     setAttendence((prevs) => [
       ...prevs,
       {
         id: id,
         class: "1",
         attDate: new Date().toLocaleDateString(),
-        status: att,
+        status: status,
       },
     ]);
     console.log(attendece);
